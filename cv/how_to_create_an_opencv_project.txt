@@ -1,0 +1,26 @@
+This manual assumes that you have download and install OpenCV in your computer. 
+
+I. New an empty win32 console project.
+
+    1. Open Visual Studio, File -> New -> Project.
+
+    2. Select "Win32 Console Application" -> click "OK" button -> click "Next" button.
+
+    3. Select "Empty Project" -> click "Finish" button.
+
+    4. Add an OpenCV related source code file to "Source Files".
+
+II. Add OpenCV related header file and library directories.
+
+    5. Right click project name -> select "Property" -> select "Configuration Properties" -> "C/C++" -> "General" -> "Additional Include Directories". Add the include file, such as "C:\opencv-2.4.10\build\include"
+
+    6. Also select "Configuration Properties" -> "Linker" -> "General" -> "Additional Library Directories". Add the directory where you put your OpenCV library. For instance, I will use the VS2012 dynamic library in my computer, then I should add "C:\opencv-2.4.10\build\x64\vc11\lib".
+
+    7. Also select "Configuration Properties" -> "Linker" -> "Input" -> "Additional Dependencies". Add the OpenCV libs. 
+    The full OpenCV-2.4.10 release lib is "opencv_calib3d2410.lib opencv_contrib2410.lib opencv_core2410.lib opencv_features2d2410.lib opencv_flann2410.lib opencv_gpu2410.lib opencv_highgui2410.lib opencv_imgproc2410.lib opencv_legacy2410.lib opencv_ml2410.lib opencv_nonfree2410.lib opencv_objdetect2410.lib opencv_ocl2410.lib opencv_photo2410.lib opencv_stitching2410.lib opencv_superres2410.lib opencv_ts2410.lib opencv_video2410.lib opencv_videostab2410.lib"
+
+III. add command line if necessary.
+
+8. Also select "Configuration Properties" -> "Debugging" -> "Command Arguments". Add your command line here, such as "-h > stdout_help_info.txt" to get help info for most of applications. 
+
+
