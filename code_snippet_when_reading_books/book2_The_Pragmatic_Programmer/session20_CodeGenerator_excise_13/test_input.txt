@@ -1,0 +1,15 @@
+//
+// Generating code from a language-neutral representation. 
+// In the input file, 
+//	 lines starting with ‘M’ flag the start of a message definition, 
+//	 ‘F’ lines define fields, 
+//	 ‘E’ is the end of the message.
+//
+
+# Add a product
+# to the 'on-order' list
+M AddProduct
+F id int
+F name char[30]
+F order_code int
+E

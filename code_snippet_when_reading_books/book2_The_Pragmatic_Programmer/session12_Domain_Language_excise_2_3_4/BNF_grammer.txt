@@ -1,0 +1,19 @@
+# Problem: 
+# 	Design a BNF grammar to parse a time specification, such as 4pm, 7:38pm, 23:42, 3:16, 3:16am
+#
+# Solution by:
+# 	xjs.xjtu@gmail.com 2015.02.2015
+#
+# Remaining issue:
+#	1. Is it necessary to represent more detailed limitation in BNF grammar? 
+#      For example, if am/pm exists, the digit number before ":" should be <12.
+#	2. Does the "opt-" in <opt-xxx> means <xxx> is optional, or it's just a normal tag <opt-xxx> which is different from <xxx>?
+
+<digit> 		::= '0'|'1'|'2'|...|'9'
+<1or2_digit> 	::= <digit> | <digit> <digit>
+<ampm>			::= 'am'|'pm'
+<separator>		::= ':'
+
+<time>  		::= <1or2_digit> <ampm> 
+				  | <1or2_digit> <separator> <1or2_digit> 
+				  | <1or2_digit> <separator> <1or2_digit> <ampm>

@@ -1,0 +1,13 @@
+# This is a test action file
+P 1 # select pen 1
+D	# pen down
+W 1
+N 1
+E 2
+S 2
+W 3
+N 3
+E 5
+S 5
+
+U	# pen up
