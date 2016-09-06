@@ -1,0 +1,4 @@
+const uint8_t kMaskBursty2_2[4] = {
+  0x80, 0x00,
+  0xc0, 0x00
+};

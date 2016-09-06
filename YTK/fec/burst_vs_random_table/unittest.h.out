@@ -1,0 +1,5 @@
+This file is generated automatically from  unittest.h
+const uint8_t kMaskBursty2_2[4] = {
+  10000000, 00000000, 
+  11000000, 00000000, 
+};
